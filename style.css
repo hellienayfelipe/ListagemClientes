@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c0808;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+    text-align: center;
+}
+ 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+ 
+h1 {
+    color: #b75252;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+ 
+table {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease;
+}
+ 
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+ 
+th {
+    background-color: #b75252;
+    color: #fff;
+}
+ 
+td:last-child {
+    text-align: center;
+}
+ 
+tr:hover {
+    background-color: #e3fcef;
+}
+ 
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    color: #000;
+    animation: fadeIn 1.5s ease-in;
+}
+ 
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+ 
+form input:focus {
+    border-color: #b75252;
+    box-shadow: 0 0 8px rgba(183, 82, 82, 0.6);
+    outline: none;
+}
+ 
+form button {
+    display: block;
+    margin: 0 auto;
+    background-color: #b75252;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+form button:hover {
+    background-color: #974040;
+    transform: scale(1.03);
+}
+ 
+a[href^="ClienteExcluir.php"] {
+    display: inline-block;
+    background-color: #d9534f;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+ 
+a[href^="ClienteExcluir.php"]:hover {
+    background-color: #b2332c;
+}
+ 
+a[href="ClienteFormularioInserir.php"] {
+    display: inline-block;
+    background-color: #b75252;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+ 
+a[href="ClienteFormularioInserir.php"]:hover {
+    background-color: #974040;
+}
+ 
+a img {
+  width: 24px;      
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+ 
+a img:hover {
+  transform: scale(1.1);
+}

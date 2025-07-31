@@ -1,11 +1,11 @@
 <?php
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $hash = md5($senha);
+    $marca = $_POST['marca'];
+    $modelo = $_POST['modelo'];
+    $placa = $_POST['placa'];
+    
  
-    $sql = "insert into tb_clientes(nome, email, senha) values
-    ('$nome', '$email', '$hash')";
+    $sql = "insert into tb_clientes(marca, Modelo, Placa) values
+    ('$marca', '$modelo', '$placa')";
  
     include 'conexao.php';
  
